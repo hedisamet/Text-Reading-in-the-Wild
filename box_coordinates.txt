@@ -1,0 +1,13 @@
+static\temp.jpg 284 322 493 391
+static\temp.jpg 224 317 293 378
+static\temp.jpg 494 328 725 393
+static\temp.jpg 518 401 621 434
+static\temp.jpg 792 366 882 398
+static\temp.jpg 791 411 885 441
+static\temp.jpg 794 324 976 355
+static\temp.jpg 394 399 473 433
+static\temp.jpg 1001 3 1022 21
+static\temp.jpg 25 39 41 58
+static\temp.jpg 472 400 512 432
+static\temp.jpg 33 39 66 72
+static\temp.jpg 25 39 72 70

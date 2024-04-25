@@ -1,0 +1,13 @@
+static\cropped_images\cropped_1.jpg juke 0.9983
+static\cropped_images\cropped_2.jpg the 0.1302
+static\cropped_images\cropped_3.jpg joint 0.7049
+static\cropped_images\cropped_4.jpg crill 0.1312
+static\cropped_images\cropped_5.jpg tool 0.9733
+static\cropped_images\cropped_6.jpg wod 0.1150
+static\cropped_images\cropped_7.jpg cocking 0.0014
+static\cropped_images\cropped_8.jpg ma 0.2100
+static\cropped_images\cropped_9.jpg cz 0.0469
+static\cropped_images\cropped_10.jpg k 0.5900
+static\cropped_images\cropped_11.jpg i 0.5636
+static\cropped_images\cropped_12.jpg i 0.2284
+static\cropped_images\cropped_13.jpg play 0.0053
