@@ -77,7 +77,9 @@ def index():
             log_demo_content = log_file.read()
         
         # Renvoyer le rendu HTML avec les images et les mots détectés
-        return render_template('index1.html',original_image='temp.jpg', processed_image='results.jpg', cropped_images=os.listdir(cropped_images_dir), detected_words=detected_words, log_demo=log_demo_content)
+        scroll_position = request.args.get('scroll_position', default=None, type=int)
+        return render_template('index1.html', original_image='temp.jpg', processed_image='results.jpg', cropped_images=os.listdir(cropped_images_dir), detected_words=detected_words, log_demo=log_demo_content, scroll_position=scroll_position)
+
     
     return render_template('index1.html')
 @app.route('/inner-page')
