@@ -339,7 +339,7 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="image-results">
               {% if original_image %}
               <h2>Original Image</h2>
               <div class="image-container">
@@ -388,7 +388,21 @@
           </div>
         </div>
       </section>
-
+      {% if scroll_position %}
+      <script>
+        // Function to scroll to a specific element by ID
+        function scrollToElement() {
+          const element = document.getElementById('image-results');
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      
+        // Call the scrollToElement function after a short delay to ensure the content is loaded
+        setTimeout(scrollToElement, 100);
+      </script>
+      {% endif %}
+      
       <!-- End Why Us Section -->
     </main>
     <!-- End #main -->
@@ -494,6 +508,22 @@
         document.getElementById("uploadForm").submit();
       }
     </script>
+    <script>
+      // Store the current scroll position before the page reloads
+      window.addEventListener('beforeunload', function () {
+        sessionStorage.setItem('scrollPosition', window.scrollY);
+      });
+    
+      // Restore the scroll position after the page reloads
+      window.addEventListener('load', function () {
+        var scrollPosition = parseInt(sessionStorage.getItem('scrollPosition'));
+        if (!isNaN(scrollPosition)) {
+          window.scrollTo(0, scrollPosition);
+          sessionStorage.removeItem('scrollPosition'); // Remove the stored scroll position
+        }
+      });
+    </script>
+    
     <script>
       document.getElementById('imageInput').addEventListener('change', function() {
         var fileName = this.value.split('\\').pop(); // Extract filename from the path
